@@ -10,6 +10,7 @@ body {
     background-image: url('https://source.unsplash.com/random/1600×900/?landscape');
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
     font-size: 120%;
 }
 .card {

@@ -1,5 +1,6 @@
+import openWeatherMapKey from '../variables.js';
 let weather = {
-    apiKey:"4c7df2db5b2253155e9c3b7697df253b",
+    apiKey:openWeatherMapKey,
     getWeather: function(city) {
         fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=" + this.apiKey)
             .then(coord => coord.json())

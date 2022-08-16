@@ -2,8 +2,8 @@ body {
     display:flex;
     justify-content:center;
     align-items: center;
-    height: 100vh;
-    margin:0;
+    min-height: 100vh;
+    margin:auto 0;
     font-family: Montserrat;
     color:white;
     background: lightskyblue;
@@ -74,6 +74,41 @@ input::-webkit-input-placeholder {
     position: absolute;
     top: 0;
     left: 20px;
+}
+.hide {
+    display: none;
+}
+.cities p {
+    background-color:#0000006b;
+    font-weight: bold;
+    width: fit-content;
+    margin:0.5em auto;
+    padding: 0.75em;
+    border-radius: 0.5em;
+}
+.city-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cities button {
+    margin: 0.5em 1em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border:none;
+    background-color:#0000002b;
+    color:white;
+    cursor:pointer;
+    transition: all 0.25s ease-in-out;
+    font-size: 100%;
+}
+
+.cities button:hover {
+    background-color:#0000006b;
+}
+
+.place {
+    font-family: inherit;
 }
 .city {
     margin-bottom: 1em;

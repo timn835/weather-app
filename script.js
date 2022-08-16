@@ -18,12 +18,11 @@ let weather = {
             cityButtons.firstChild.remove()
         }
         if(cities.length === 0) {
-            citiesDiv.firstElementChild.textContent = 'No cities of that name, please try again';
+            citiesDiv.firstElementChild.textContent = 'No places found, please try again';
             return;
         }
-        citiesDiv.firstElementChild.textContent = '🢛 Choose your city 🢛';
+        citiesDiv.firstElementChild.textContent = 'Choose a place';
         for(let city of cities) {
-            // console.log(city);
             let name = city.name;
             if('state' in city) name += ', ' + city.state;
             if('country' in city) name += ', ' + city.country;
